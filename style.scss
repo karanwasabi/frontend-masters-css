@@ -26,13 +26,19 @@ ul {
 .ball {
   height: 10vmin;
   width: 10vmin;
+  left: 50vw;
   border-radius: 50%;
   background: radial-gradient(circle at bottom right, #fb2324, #fe932a);
   background: #fb2324;
-  transition-property: background;
-  transition-duration: 1s;
+  // transition-property: background, transform;
+  // transition-timing-function: linear, ease-in-out;
+  // transition-duration: 2s;
+  // transition-delay: 0.5s;
+
+  transition: all 2s 0.5s ease-in-out;
 
   &:hover {
     background: blue;
+    transform: scale(2);
   }
 }
