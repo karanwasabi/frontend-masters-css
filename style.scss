@@ -24,8 +24,15 @@ ul {
 }
 
 .ball {
-  height: 5vmin;
-  width: 5vmin;
+  height: 10vmin;
+  width: 10vmin;
   border-radius: 50%;
   background: radial-gradient(circle at bottom right, #fb2324, #fe932a);
+  background: #fb2324;
+  transition-property: background;
+  transition-duration: 1s;
+
+  &:hover {
+    background: blue;
+  }
 }
